@@ -90,7 +90,7 @@ public class ShortestPath {
 		LinkedList<Node> path = new LinkedList<Node>();
 		Node node = end;
 		boolean done = false;
-		
+		path.add(node);
 		while(!done) {
 			path.addFirst(node.getParent());
 			node = node.getParent();
